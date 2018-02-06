@@ -1,0 +1,23 @@
+<!--
+    project: the directory location of the project
+
+    projectname: the name of the project
+
+    deploytomcatwebappsdir: the directory location of the runtime servlet container,
+    into which the deployment is done
+
+    deploytomcatport: the port under which the runtime servlet container is running
+ -->
+<project managedbycctoolset="false"
+         webcontentdirectory="${project}/src/main/webapp"
+	     javasourcedirectory="${project}/src/main/java"
+	     javaclassdirectory="${project}/target/classes"
+	     webappaddonsdirectory="${project}/webcontentcc"
+	     webcontentdeploydirectory="${deploytomcatwebappsdir}/${projectname}"
+	     webcontextroot="${projectname}"
+	     webhostport="dockerhost:5000"
+	     copywebapp="true"
+  	     reloadwebapp="true">
+	<deploycopyinfo fromdir="${project}/target/${projectname}"
+		            todir="${projectdeploy}" />
+</project>

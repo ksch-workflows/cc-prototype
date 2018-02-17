@@ -1,8 +1,7 @@
 package io.github.kschworkflows.common;
 
-import io.github.kschworkflows.NavigationCallback;
+import io.github.kschworkflows.Callback;
 import io.github.kschworkflows.PageController;
-import io.github.kschworkflows.registration.RegisterPatientActivity;
 import lombok.Getter;
 import lombok.Setter;
 import org.eclnt.jsfserver.pagebean.IPageBean;
@@ -17,7 +16,7 @@ public class ActivityFrame extends PageController
 
     private IPageBean m_activity;
 
-    private NavigationCallback m_displayPreviousPage;
+    private Callback m_displayPreviousPage;
 
     public ActivityFrame()
     {

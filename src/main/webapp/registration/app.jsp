@@ -4,19 +4,16 @@
 <%@taglib prefix="f" uri="http://java.sun.com/jsf/core"%>
 <%@taglib prefix="h" uri="http://java.sun.com/jsf/html"%>
 
-@@taglibraries@@
+<%@taglib prefix="t" uri="/WEB-INF/eclnt"%>
+
 
 <!-- ========== CONTENT BEGIN ========== -->
 <f:view>
 <h:form>
-<f:subview id="template">
-
-    <t:rowtitlebar id="g_2" />
-    <t:rowheader id="g_3" />
-    <t:rowbodypane id="g_4" />
-    <t:rowstatusbar id="g_5" />
-    
-<t:pageaddons/>
+<f:subview id="registration_appg_sv">
+<t:rowpagebeaninclude id="g_4" pagebeanbinding="#{d.RegistrationApp.header}" />
+<t:rowpagebeaninclude id="g_2" pagebeanbinding="#{d.RegistrationApp.currentPage}" />
+<t:pageaddons id="g_pa"/>
 </f:subview>
 </h:form>
 </f:view>

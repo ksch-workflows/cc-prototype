@@ -1,6 +1,5 @@
 package io.github.kschworkflows.registration;
 
-import io.github.kschworkflows.NavigationCallback;
 import io.github.kschworkflows.PageController;
 import lombok.Getter;
 import lombok.Setter;

@@ -1,6 +1,7 @@
 package io.github.kschworkflows;
 
 import lombok.Getter;
+import lombok.RequiredArgsConstructor;
 import org.eclnt.jsfserver.pagebean.PageBean;
 
 import java.io.Serializable;
@@ -19,24 +20,7 @@ public abstract class PageController extends PageBean implements Serializable
      */
     public PageController(String pageRoot, String pageFile)
     {
-        checkConstructorConvention();
-        // TODO Check page root expression is valid
-        // TODO Check page file exists
-
         m_rootExpressionUsedInPage = pageRoot;
         m_pageName = pageFile;
-    }
-
-    private void checkConstructorConvention()
-    {
-        // TODO Define custom exception for framework convention exception
-        Constructor<?>[] constructors = getClass().getConstructors();
-        if (constructors.length != 1) {
-            throw new RuntimeException("FrameworkConventionViolation. Only the default constructor is allowed for page controllers.");
-        }
-
-        if(constructors[0].getParameterCount() != 0) {
-            throw new RuntimeException("FrameworkConventionViolation. Only the default constructor is allowed for page controllers.");
-        }
     }
 }

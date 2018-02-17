@@ -24,7 +24,7 @@ public class ApplicationFrame extends PageController
     {
         super("#{d.ApplicationFrame}", "/common/application-frame.jsp");
 
-        m_currentPage = new ActivityDashboard();
+        displayRegistrationActivityDashboard();
     }
 
     public void onStartActivity(ActionEvent actionEvent)
@@ -37,9 +37,15 @@ public class ApplicationFrame extends PageController
             ActivityFrame activityFrame = new ActivityFrame();
             activityFrame.setActivityName("Register patient");
             activityFrame.setActivity(new RegisterPatientActivity());
+            activityFrame.setDisplayPreviousPage(() -> displayRegistrationActivityDashboard());
             m_currentPage = activityFrame;
         } else {
             log.severe("Cannot handle action key: " + actionKey);
         }
+    }
+
+    private void displayRegistrationActivityDashboard()
+    {
+        m_currentPage = new ActivityDashboard();
     }
 }

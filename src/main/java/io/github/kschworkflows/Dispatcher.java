@@ -1,8 +1,7 @@
-package managedbeans;
+package io.github.kschworkflows;
 
 import org.eclnt.workplace.WorkpageDispatcher;
 import org.eclnt.workplace.IWorkpageContainer;
-import org.eclnt.workplace.WorkpageDispatcher;
 
 /*
  * The dispatcher is referenced in faces-config.xml. When changing the package

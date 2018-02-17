@@ -14,7 +14,7 @@
 <t:row id="g_1" >
 <t:pane id="g_2" width="100%" >
 <t:row id="g_3" >
-<t:button id="g_4" text="Add new patient" />
+<t:button id="g_4" actionListener="#{d.registration.RegisterPatientActivity.onAddPatient}" text="Add new patient" />
 <t:coldistance id="g_5" width="100%" />
 <t:field id="g_6" width="150" />
 <t:coldistance id="g_7" />

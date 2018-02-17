@@ -17,7 +17,7 @@
 <t:button id="g_4" text="Logout" />
 </t:rowheader>
 <t:rowbodypane id="g_5" >
-<t:rowpagebeaninclude id="g_8" pagebeanbinding="#{d.ApplicationFrameBean.currentPage}" />
+<t:rowpagebeaninclude id="g_8" pagebeanbinding="#{d.ApplicationFrame.currentPage}" />
 </t:rowbodypane>
 <t:rowstatusbar id="g_6" />
 <t:pageaddons id="g_pa"/>

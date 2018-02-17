@@ -16,7 +16,7 @@
 
     <managed-bean>
         <managed-bean-name>d</managed-bean-name>
-        <managed-bean-class>managedbeans.Dispatcher</managed-bean-class>
+        <managed-bean-class>io.github.kschworkflows.Dispatcher</managed-bean-class>
         <managed-bean-scope>session</managed-bean-scope>
     </managed-bean>
 	

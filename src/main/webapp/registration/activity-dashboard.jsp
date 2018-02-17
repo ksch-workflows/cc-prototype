@@ -13,8 +13,8 @@
 <f:subview id="registration_activity-dashboardg_sv">
 <t:rowbodypane id="g_1" >
 <t:row id="g_2" coldistance="20" >
-<t:button id="g_3" actionListener="#{d.ApplicationFrameBean.onStartActivity}" clientname="register-patient" height="200" rounding="10" text="Register patient" verticaltextposition="top" width="200" />
-<t:button id="g_4" actionListener="#{d.ApplicationFrameBean.onStartActivity}" clientname="receive-payment" height="200" rounding="10" text="Receive payment" width="200" />
+<t:button id="g_3" actionListener="#{d.ApplicationFrame.onStartActivity}" clientname="register-patient" height="200" rounding="10" text="Register patient" verticaltextposition="top" width="200" />
+<t:button id="g_4" actionListener="#{d.ApplicationFrame.onStartActivity}" clientname="receive-payment" height="200" rounding="10" text="Receive payment" width="200" />
 </t:row>
 </t:rowbodypane>
 <t:pageaddons id="g_pa"/>

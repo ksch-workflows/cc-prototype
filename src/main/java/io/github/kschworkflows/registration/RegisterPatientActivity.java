@@ -12,11 +12,9 @@ import javax.faces.event.ActionEvent;
 @Log
 public class RegisterPatientActivity extends PageController
 {
-
-
     public RegisterPatientActivity()
     {
-        super("#{d.registration.RegisterPatientActivity}", "/registration/register-patient-activity.jsp");
+        super("#{d.RegisterPatientActivity}", "/registration/register-patient-activity.jsp");
     }
 
     public void onAddPatient(ActionEvent actionEvent)

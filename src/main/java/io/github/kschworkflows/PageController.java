@@ -2,12 +2,14 @@ package io.github.kschworkflows;
 
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
+import lombok.extern.java.Log;
 import org.eclnt.jsfserver.pagebean.PageBean;
 
 import java.io.Serializable;
 import java.lang.reflect.Constructor;
 
 @Getter
+@Log
 public abstract class PageController extends PageBean implements Serializable
 {
     private final String m_rootExpressionUsedInPage;
@@ -20,7 +22,25 @@ public abstract class PageController extends PageBean implements Serializable
      */
     public PageController(String pageRoot, String pageFile)
     {
+        checkConstructorConvention();
+
         m_rootExpressionUsedInPage = pageRoot;
         m_pageName = pageFile;
+    }
+
+    private void checkConstructorConvention()
+    {
+        String errorMessage = "Only the default constructor is allowed for page controllers.";
+
+        Constructor<?>[] constructors = getClass().getConstructors();
+        if (constructors.length != 1) {
+            log.severe(errorMessage);
+            throw new ConventionViolationException(errorMessage);
+        }
+
+        if(constructors[0].getParameterCount() != 0) {
+            log.severe(errorMessage);
+            throw new RuntimeException(errorMessage);
+        }
     }
 }

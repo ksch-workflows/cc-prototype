@@ -12,9 +12,9 @@
 <h:form>
 <f:subview id="common_headerg_sv">
 <t:rowheader id="g_1" background="#7f7f7f" >
-<t:button id="g_2" actionListener="#{d.common.Header.onHomeButtonClicked}" text="Home" />
+<t:button id="g_2" actionListener="#{d.Header.onHomeButtonClicked}" text="Home" />
 <t:coldistance id="g_3" width="100%" />
-<t:button id="g_4" actionListener="#{d.common.Header.onLogoutButtonClicked}" text="Logout" />
+<t:button id="g_4" actionListener="#{d.Header.onLogoutButtonClicked}" text="Logout" />
 </t:rowheader>
 <t:pageaddons id="g_pa"/>
 </f:subview>

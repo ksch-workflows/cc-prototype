@@ -1,7 +1,7 @@
-package io.github.kschworkflows;
+package io.github.kschworkflows.registration;
 
+import io.github.kschworkflows.PageController;
 import io.github.kschworkflows.common.Header;
-import io.github.kschworkflows.registration.ActivityDashboard;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.extern.java.Log;
@@ -29,7 +29,8 @@ public class RegistrationApp extends PageController
 
     public void displayActivityDashboard()
     {
-        ActivityDashboard activityDashboard = new ActivityDashboard(this);
+        ActivityDashboard activityDashboard = new ActivityDashboard();
+        activityDashboard.setAppFrame(this);
 
         m_currentPage = activityDashboard;
     }

@@ -16,7 +16,7 @@ public class Header extends PageController
 
     public Header()
     {
-        super("#{d.common.Header}", "/common/header.jsp");
+        super("#{d.Header}", "/common/header.jsp");
     }
 
     public void onHomeButtonClicked(ActionEvent actionEvent)

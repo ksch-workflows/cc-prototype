@@ -1,20 +1,19 @@
 package io.github.kschworkflows.registration;
 
 import io.github.kschworkflows.PageController;
-import io.github.kschworkflows.RegistrationApp;
 import io.github.kschworkflows.common.ActivityFrame;
+import lombok.Setter;
 
 import javax.faces.event.ActionEvent;
 
+@Setter
 public class ActivityDashboard extends PageController
 {
-    private final RegistrationApp m_appFrame;
+    private RegistrationApp m_appFrame;
 
-    public ActivityDashboard(RegistrationApp appFrame)
+    public ActivityDashboard()
     {
-        super("#{d.registration.ActivityDashboard}", "/registration/activity-dashboard.jsp");
-
-        m_appFrame = appFrame;
+        super("#{d.ActivityDashboard}", "/registration/activity-dashboard.jsp");
     }
 
     public void onRegisterPatientClicked(ActionEvent actionEvent)

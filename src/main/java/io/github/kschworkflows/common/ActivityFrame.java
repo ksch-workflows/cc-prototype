@@ -20,7 +20,7 @@ public class ActivityFrame extends PageController
 
     public ActivityFrame()
     {
-        super("#{d.common.ActivityFrame}", "/common/activity-frame.jsp");
+        super("#{d.ActivityFrame}", "/common/activity-frame.jsp");
     }
 
     public void onBackButtonClicked(ActionEvent actionEvent)

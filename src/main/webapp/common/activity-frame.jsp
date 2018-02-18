@@ -14,14 +14,14 @@
 <t:rowbodypane id="g_1" >
 <t:row id="g_2" >
 <t:coldistance id="g_3" width="25" />
-<t:button id="g_4" actionListener="#{d.common.ActivityFrame.onBackButtonClicked}" text="Back" width="50" />
+<t:button id="g_4" actionListener="#{d.ActivityFrame.onBackButtonClicked}" text="Back" width="50" />
 <t:coldistance id="g_5" width="25" />
-<t:label id="g_6" font="size:18;weight:bold" text="#{d.common.ActivityFrame.activityName}" />
+<t:label id="g_6" font="size:18;weight:bold" text="#{d.ActivityFrame.activityName}" />
 </t:row>
 <t:rowdistance id="g_7" height="20" />
 <t:row id="g_8" >
 <t:coldistance id="g_9" width="100" />
-<t:pagebeaninclude id="g_10" pagebeanbinding="#{d.common.ActivityFrame.activity}" />
+<t:pagebeaninclude id="g_10" pagebeanbinding="#{d.ActivityFrame.activity}" />
 </t:row>
 </t:rowbodypane>
 <t:pageaddons id="g_pa"/>

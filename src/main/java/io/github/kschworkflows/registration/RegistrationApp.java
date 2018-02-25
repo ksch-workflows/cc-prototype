@@ -21,7 +21,7 @@ public class RegistrationApp extends PageController
         super("#{d.RegistrationApp}", "/registration/app.jsp");
 
         Header header = new Header();
-        header.setDisplayHomePage(() -> displayActivityDashboard());
+        header.setDisplayHomePageCallback(() -> displayActivityDashboard());
         m_header = header;
 
         displayActivityDashboard();

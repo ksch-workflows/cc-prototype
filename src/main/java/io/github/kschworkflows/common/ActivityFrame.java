@@ -16,7 +16,7 @@ public class ActivityFrame extends PageController
 
     private IPageBean m_activity;
 
-    private Callback m_displayPreviousPage;
+    private Callback m_displayPreviousPageCallback;
 
     public ActivityFrame()
     {
@@ -26,6 +26,6 @@ public class ActivityFrame extends PageController
     public void onBackButtonClicked(ActionEvent actionEvent)
     {
         // TODO How to make sure that this cannot be null?
-        m_displayPreviousPage.execute();
+        m_displayPreviousPageCallback.execute();
     }
 }

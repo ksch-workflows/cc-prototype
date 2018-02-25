@@ -40,7 +40,7 @@ public abstract class PageController extends PageBean implements Serializable
 
         if(constructors[0].getParameterCount() != 0) {
             log.severe(errorMessage);
-            throw new RuntimeException(errorMessage);
+            throw new ConventionViolationException(errorMessage);
         }
     }
 }

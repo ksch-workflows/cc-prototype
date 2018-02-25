@@ -12,7 +12,7 @@ import javax.faces.event.ActionEvent;
 public class Header extends PageController
 {
     @Setter
-    private Callback m_displayHomePage;
+    private Callback m_displayHomePageCallback;
 
     public Header()
     {
@@ -21,7 +21,7 @@ public class Header extends PageController
 
     public void onHomeButtonClicked(ActionEvent actionEvent)
     {
-        m_displayHomePage.execute();
+        m_displayHomePageCallback.execute();
     }
 
     public void onLogoutButtonClicked(ActionEvent actionEvent)

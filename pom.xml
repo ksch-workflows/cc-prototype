@@ -37,7 +37,7 @@
 		<dependency>
 			<groupId>org.eclnt</groupId>
 			<artifactId>eclntjsfserver</artifactId>
-			<version>20180206</version>
+			<version>20180226</version>
 		</dependency>
         <!--
           The following libraries are defined with scope "provided" within
@@ -139,7 +139,7 @@
 								<artifactItem>
 									<groupId>org.eclnt</groupId>
 									<artifactId>eclntwebappaddonsRISC</artifactId>
-                                    <version>20180206</version>
+                                    <version>20180226</version>
 									<outputDirectory>webcontentcc</outputDirectory>
 									<!-- Do not copy the libraries! -->
                                     <excludes>WEB-INF/lib/**.*</excludes>

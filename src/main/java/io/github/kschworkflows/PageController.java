@@ -8,12 +8,14 @@ import org.eclnt.jsfserver.pagebean.PageBean;
 import java.io.Serializable;
 import java.lang.reflect.Constructor;
 
-@Getter
+
 @Log
 public abstract class PageController extends PageBean implements Serializable
 {
+    @Getter
     private final String m_rootExpressionUsedInPage;
 
+    @Getter
     private final String m_pageName;
 
     /**

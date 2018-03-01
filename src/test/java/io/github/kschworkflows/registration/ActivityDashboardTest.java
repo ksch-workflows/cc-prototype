@@ -36,4 +36,5 @@ public class ActivityDashboardTest
         assertEquals("Patient registration page was not opened.",
                 "/registration/register-patient-activity.jsp", activityFrame.getActivity().getPageName());
     }
+
 }

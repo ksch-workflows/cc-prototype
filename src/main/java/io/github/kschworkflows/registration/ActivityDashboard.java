@@ -24,7 +24,9 @@ public class ActivityDashboard extends PageController
 
         activityFrame.setActivityName("Register patient");
         activityFrame.setActivity(new RegisterPatientActivity());
-        activityFrame.setDisplayPreviousPageCallback(() -> m_appFrame.displayActivityDashboard());
+        activityFrame.setDisplayPreviousPageCallback(
+                () -> m_appFrame.displayActivityDashboard()
+        );
 
         m_appFrame.setCurrentPage(activityFrame);
     }

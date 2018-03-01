@@ -107,21 +107,6 @@
     <servlet-class>javax.faces.webapp.FacesServlet</servlet-class>
     <load-on-startup>1</load-on-startup>
   </servlet>
-  <servlet id="JnlpDownloadServlet">
-    <servlet-name>JnlpDownloadServlet</servlet-name>
-    <servlet-class>jnlp.sample.servlet.JnlpDownloadServlet</servlet-class>
-    <load-on-startup>1</load-on-startup>
-  </servlet>
-  <servlet id="AppletStarter">
-    <servlet-name>AppletStarter</servlet-name>
-    <servlet-class>org.eclnt.jsfserver.starter.AppletStarter</servlet-class>
-    <load-on-startup>1</load-on-startup>
-  </servlet>
-  <servlet id="FileUploadServlet">
-    <servlet-name>FileUploadServlet</servlet-name>
-    <servlet-class>org.eclnt.jsfserver.htfileupload.FileUploadServlet</servlet-class>
-    <load-on-startup>1</load-on-startup>
-  </servlet>
   <servlet id="BufferedContentServlet">
     <servlet-name>BufferedContentServlet</servlet-name>
     <servlet-class>org.eclnt.jsfserver.bufferedcontent.BufferedContentServlet</servlet-class>
@@ -211,26 +196,6 @@
   <servlet-mapping>
     <servlet-name>Faces Servlet</servlet-name>
     <url-pattern>/faces/*</url-pattern>
-  </servlet-mapping>
-  <servlet-mapping>
-    <servlet-name>JnlpDownloadServlet</servlet-name>
-    <url-pattern>*.jnlp</url-pattern>
-  </servlet-mapping>
-  <servlet-mapping>
-    <servlet-name>AppletStarter</servlet-name>
-    <url-pattern>*.ccapplet</url-pattern>
-  </servlet-mapping>
-  <servlet-mapping>
-    <servlet-name>AppletStarter</servlet-name>
-    <url-pattern>*.ccwebstart</url-pattern>
-  </servlet-mapping>
-  <servlet-mapping>
-    <servlet-name>AppletStarter</servlet-name>
-    <url-pattern>*.ccwebstartfx</url-pattern>
-  </servlet-mapping>
-  <servlet-mapping>
-    <servlet-name>FileUploadServlet</servlet-name>
-    <url-pattern>*.fileupload</url-pattern>
   </servlet-mapping>
   <servlet-mapping>
     <servlet-name>BufferedContentServlet</servlet-name>

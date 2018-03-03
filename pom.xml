@@ -107,6 +107,13 @@
 			<scope>test</scope>
 		</dependency>
 
+        <dependency>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
+            <version>24.0-jre</version>
+            <scope>test</scope>
+        </dependency>
+
 
 	</dependencies>
 	<build>
@@ -162,12 +169,26 @@
 					</webResources>
 				</configuration>
 			</plugin>
+
 			<!-- Mutation testing with PiTest (http://pitest.org) -->
 			<plugin>
 			    <groupId>org.pitest</groupId>
 			    <artifactId>pitest-maven</artifactId>
 			    <version>1.3.2</version>
 			</plugin>
+
 		</plugins>
+
+		<resources>
+			<resource>
+                <!-- Enables unit tests for XML files -->
+				<directory>src/main/webapp</directory>
+			</resource>
+            <resource>
+                <directory>src/main/resources</directory>
+            </resource>
+		</resources>
+
 	</build>
+
 </project>

@@ -6,14 +6,6 @@
     xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-facesconfig_1_2.xsd"
     version="1.2">
 
-<!--  
-	<managed-bean>
-		<managed-bean-name>name</managed-bean-name>
-		<managed-bean-class>package.className</managed-bean-class>
-		<managed-bean-scope>session</managed-bean-scope>
-	</managed-bean>
--->
-
     <managed-bean>
         <managed-bean-name>d</managed-bean-name>
         <managed-bean-class>io.github.kschworkflows.Dispatcher</managed-bean-class>
